@@ -2,7 +2,8 @@
 
 This project uses various reinforcement learning algorithms (such as PPO, SAC, A2C) for training, utilizing the PyBullet simulation environment. The goal is to train a simulated car to autonomously move and successfully navigate to the R2D2 location.
 
-The car and r2d2 in the PyBullet simulation environment: 
+The car and r2d2 in the PyBullet simulation environment:
+ 
 ![Car and R2D2](./images/car_r2d2.png)
 
 ---
