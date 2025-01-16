@@ -70,7 +70,7 @@ The reward is calculated based on the car's performance in reaching the goal and
 - Define the car's observation space (perceiving R2D2's position and obstacles) and action space (car's acceleration, deceleration, and steering).  
 
 ### 2. Start Training  
-- Choose from various reinforcement learning algorithms (like PPO, DQN, or A2C) for training.  
+- Choose from various reinforcement learning algorithms (like PPO, SAC, or A2C) for training.  
 - Record the reward curve for each algorithm during training for comparison of performance.  
 
 ### 3. Test the Model  
