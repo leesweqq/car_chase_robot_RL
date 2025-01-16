@@ -10,11 +10,13 @@ The car and r2d2 in the PyBullet simulation environment:
 ## Results Showcase  
 
 #### Training and Testing Process  
-Watch how the car learns to navigate during training:  
+Watch how the car learns to navigate during training:
+
 ![Training Process](./images/train_low.gif)
 
 ### Testing Results  
 Here is the SAC algorithm performance in the testing environment:  
+
 ![Testing Results](./images/test_low.gif)
 
 ### Training Results  
@@ -40,11 +42,11 @@ Based on the testing results, the performance of the algorithms can be summarize
 ### Observation  
 The observation vector consists of the car's position, orientation, velocity, and the target's position:
 
-- The car’s position is represented by \(x_{\text{car}}\) and \(y_{\text{car}}\).
-- The car’s orientation is given by \(\theta_{\text{car}}\), which indicates the direction the car is facing.
-- The direction vector of the car is represented by the cosine and sine of \(\theta_{\text{car}}\), reflecting the car’s facing direction.
-- The car's velocity components in the x and y axes are represented as \(v_x\) and \(v_y\).
-- The target's position is represented by \(x_{\text{goal}}\) and \(y_{\text{goal}}\), which the car must navigate toward.
+- The car’s position is represented by its coordinates on the x and y axes.
+- The car’s orientation indicates the direction in which the car is facing.
+- The direction in which the car is facing is determined by its orientation, which defines the car's movement direction..
+- The car’s velocity is represented by its speed along the x and y axes.
+- The target’s position is the location the car is navigating towards.
 
 ### Reward  
 The reward is calculated based on the car's performance in reaching the goal and its behavior during the task:
@@ -79,33 +81,3 @@ To train or test the model, run the `main.py` script:
 
 ```bash
 python main.py
-
----
-
-##Installation Guide  
-
-Please install the necessary Python packages:  
-
-```bash
-pip install stable-baselines3
-pip install pybullet
-pip install matplotlib
-pip install numpy
-
----
-
-## Resources & References  
-
-Here are the official resources for the tools and libraries used in this project:
-
-- **Stable-Baselines3**:  
-  [Official Documentation](https://stable-baselines3.readthedocs.io/)  
-
-- **PyBullet**:  
-  [Official Documentation](https://pybullet.org/)  
-
-- **Matplotlib**:  
-  [Official Documentation](https://matplotlib.org/)  
-
-- **NumPy**:  
-  [Official Documentation](https://numpy.org/)  
