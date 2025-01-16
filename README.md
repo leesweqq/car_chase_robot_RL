@@ -44,7 +44,7 @@ The observation vector consists of the car's position, orientation, velocity, an
 
 - The car’s position is represented by its coordinates on the x and y axes.
 - The car’s orientation indicates the direction in which the car is facing.
-- The direction in which the car is facing is determined by its orientation, which defines the car's movement direction..
+- The direction in which the car is facing is determined by its orientation, which defines the car's movement direction.
 - The car’s velocity is represented by its speed along the x and y axes.
 - The target’s position is the location the car is navigating towards.
 
