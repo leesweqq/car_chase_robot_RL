@@ -1,6 +1,6 @@
 # Car Reinforcement Learning Training  
 
-This project uses various reinforcement learning algorithms (such as PPO, SAC, A2C) for training, utilizing the PyBullet simulation environment. The goal is to train a simulated car to autonomously move and successfully navigate to the R2D2 location.
+This project leverages Stable-Baselines3 to implement reinforcement learning algorithms such as PPO, SAC, and A2C. Combined with the PyBullet simulation environment, the aim is to train a virtual car to autonomously navigate and reach the designated R2D2 target location.
 
 The car and r2d2 in the PyBullet simulation environment:
  
@@ -38,6 +38,33 @@ Based on the testing results, the performance of the algorithms can be summarize
 
 ---
 
+## Usage Instructions  
+
+### 1. Setup the Environment  
+- Install the required libraries:  
+  ```bash
+  pip install pybullet  
+  pip install stable-baselines3
+  pip install matplotlib
+  pip install numpy  
+- Use **PyBullet** for simulation to set up the interaction environment for the car and R2D2.  
+- Define the car's observation space (perceiving R2D2's position and obstacles) and action space (car's acceleration, deceleration, and steering).  
+
+### 2. Start Training  
+- Choose from various reinforcement learning algorithms (like PPO, SAC, or A2C) for training.  
+- Record the reward curve for each algorithm during training for comparison of performance.  
+
+### 3. Test the Model  
+- Load the trained model and test the car's navigation ability.  
+- Evaluate if the model can stably and efficiently navigate to the R2D2 location.  
+
+### 4. Run Training or Testing 
+- To train or test the model, run the `main.py` script:
+  ```bash
+  python main.py
+
+---
+
 ## Observation and Reward Explanation  
 
 ### Observation  
@@ -63,22 +90,18 @@ The reward is calculated based on the car's performance in reaching the goal and
 
 ---
 
-## Usage Instructions  
+## Resources & References  
 
-### 1. Setup the Environment  
-- Use **PyBullet** for simulation to set up the interaction environment for the car and R2D2.  
-- Define the car's observation space (perceiving R2D2's position and obstacles) and action space (car's acceleration, deceleration, and steering).  
+Here are the official resources for the tools and libraries used in this project:
 
-### 2. Start Training  
-- Choose from various reinforcement learning algorithms (like PPO, SAC, or A2C) for training.  
-- Record the reward curve for each algorithm during training for comparison of performance.  
+- **Stable-Baselines3**:  
+  [Official Documentation](https://stable-baselines3.readthedocs.io/)  
 
-### 3. Test the Model  
-- Load the trained model and test the car's navigation ability in different maps or scenarios.  
-- Evaluate if the model can stably and efficiently navigate to the R2D2 location.  
+- **PyBullet**:  
+  [Official Documentation](https://pybullet.org/)  
 
-### 4. Run Training or Testing  
-To train or test the model, run the `main.py` script:
+- **Matplotlib**:  
+  [Official Documentation](https://matplotlib.org/)  
 
-```bash
-python main.py
+- **NumPy**:  
+  [Official Documentation](https://numpy.org/)  
